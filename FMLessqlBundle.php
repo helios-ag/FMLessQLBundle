@@ -5,10 +5,8 @@ namespace FM\LessqlBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class FMLessqlBundle
- * @package FM\LessqlBundle
+ * Class FMLessqlBundle.
  */
 class FMLessqlBundle extends Bundle
 {
-
 }

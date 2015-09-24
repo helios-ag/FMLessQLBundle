@@ -2,12 +2,11 @@
 
 namespace FM\LessqlBundle\ORM;
 
-use PDO;
 use LessQL\Database;
+use PDO;
 
 /**
- * Class Manager
- * @package FM\LessqlBundle\ORM
+ * Class Manager.
  */
 class Manager
 {
@@ -31,6 +30,7 @@ class Manager
 
     /**
      * @param string $instance
+     *
      * @return Database
      */
     public function getDB($instance = 'default')
@@ -44,7 +44,7 @@ class Manager
             $options[$instance]['options']
         );
         $this->db = new Database($pdo);
+
         return $this->db;
     }
 }
-
