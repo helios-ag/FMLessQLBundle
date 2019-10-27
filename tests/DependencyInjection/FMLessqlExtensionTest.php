@@ -10,13 +10,13 @@ use Symfony\Component\Yaml\Parser;
 /**
  * Class FMLessqExtensionTest.
  */
-class FMLessqExtensionTest extends AbstractExtensionTestCase
+class FMLessqlExtensionTest extends AbstractExtensionTestCase
 {
     protected function getContainerExtensions()
     {
-        return array(
+        return [
             new FMLessqlExtension(),
-        );
+        ];
     }
 
     public function testServices()
@@ -28,8 +28,8 @@ class FMLessqExtensionTest extends AbstractExtensionTestCase
     public function testMinimumConfiguration()
     {
         $this->container = new ContainerBuilder();
-        $loader          = new FMLessqlExtension();
-        $loader->load(array($this->getMinimalConfiguration()), $this->container);
+        $loader = new FMLessqlExtension();
+        $loader->load([$this->getMinimalConfiguration()], $this->container);
         $this->assertTrue($this->container instanceof ContainerBuilder);
     }
 
