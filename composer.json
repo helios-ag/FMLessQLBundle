@@ -1,6 +1,6 @@
 {
     "name": "helios-ag/fm-lessql-bundle",
-    "description": "Lessql bundle, adds LessQL ORM PHP to your Symfony2 project",
+    "description": "Lessql bundle, adds LessQL ORM PHP to your Symfony project",
     "keywords": ["orm","lessql", "sql"],
     "type": "symfony-bundle",
     "homepage": "https://github.com/helios-ag/FMLessqlBundle",
@@ -28,7 +28,7 @@
     "require-dev" : {
         "symfony/phpunit-bridge": "^4.3.5|^5.0",
         "matthiasnoback/symfony-config-test":  "^3.0",
-        "matthiasnoback/symfony-dependency-injection-test": "^2",
+        "matthiasnoback/symfony-dependency-injection-test": "^2"
     },
     "autoload": {
         "psr-4": { "FM\\LessqlBundle\\": "src/" }
