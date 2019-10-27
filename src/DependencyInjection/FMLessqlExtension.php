@@ -26,4 +26,12 @@ class FMLessqlExtension extends Extension
         $loader->load('services.xml');
         $container->setParameter('fm_lessql', $config['instances']);
     }
+
+    /**
+     * @return string
+     */
+    public function getNamespace()
+    {
+        return 'http://helios-ag.github.io/schema/dic/fm_lesql';
+    }
 }
