@@ -12,7 +12,7 @@ use Symfony\Component\Yaml\Parser;
  */
 class FMLessqlExtensionTest extends AbstractExtensionTestCase
 {
-    protected function getContainerExtensions()
+    protected function getContainerExtensions(): array
     {
         return [
             new FMLessqlExtension(),
