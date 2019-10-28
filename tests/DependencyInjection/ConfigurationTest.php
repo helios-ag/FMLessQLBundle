@@ -20,7 +20,7 @@ class ConfigurationTest extends \PHPUnit\Framework\TestCase
             [
                 [], // no values at all
             ],
-            'required_value' // (part of) the expected exception message - optional
+            'The child node "instances" at path "fm_lessql" must be configured.' // (part of) the expected exception message - optional
         );
     }
 }
