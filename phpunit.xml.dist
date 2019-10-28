@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="./Tests/bootstrap.php" colors="true">
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         bootstrap="tests/bootstrap.php"
+         failOnRisky="true"
+         failOnWarning="true"
+>
     <php>
-        <server name="KERNEL_DIR" value="./Tests/Functional" />
+        <ini name="error_reporting" value="E_ALL" />
+        <ini name="display_errors" value="1" />
+        <ini name="display_startup_errors" value="1" />
+        <ini name="memory_limit" value="-1" />
+        <ini name="zend.enable_gc" value="1" />
     </php>
     <testsuites>
-        <testsuite name="FMBbcodeBundle test suite">
-            <directory suffix="Test.php">./Tests</directory>
+        <testsuite name="FMLessQLBundle test suite">
+            <directory suffix="Test.php">tests</directory>
         </testsuite>
     </testsuites>
-
-    <filter>
-        <whitelist addUncoveredFilesFromWhitelist="true">
-            <directory>./</directory>
-            <exclude>
-                <directory>./Resources</directory>
-                <directory>./Tests</directory>
-                <directory>./vendor</directory>
-            </exclude>
-        </whitelist>
-    </filter>
 
     <logging>
         <!-- and this is where your report will be written -->
         <log type="coverage-clover" target="./clover.xml"/>
     </logging>
 </phpunit>
-
