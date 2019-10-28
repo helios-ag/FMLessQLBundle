@@ -42,7 +42,8 @@ instances:
       username: 'user'
       password: 'password'
       options:
-          someoption: true
+        someoption:
+          value: 'true'
 EOF;
         $parser = new Parser();
 
