@@ -8,6 +8,11 @@ class ConfigurationTest extends \PHPUnit\Framework\TestCase
 {
     use ConfigurationTestCaseTrait;
 
+    protected function getConfiguration()
+    {
+        return new Configuration();
+    }
+
     public function testValuesAreInvalidIfRequiredValueIsNotProvided()
     {
         $this->assertConfigurationIsInvalid(
