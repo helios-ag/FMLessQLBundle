@@ -2,6 +2,8 @@
 
 namespace FM\LessqlBundle\Tests\Configuration;
 
+use Matthias\SymfonyConfigTest\PhpUnit\ConfigurationTestCaseTrait;
+
 class ConfigurationTest extends \PHPUnit\Framework\TestCase
 {
     use ConfigurationTestCaseTrait;

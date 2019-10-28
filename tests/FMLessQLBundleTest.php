@@ -7,7 +7,7 @@ use FM\LessqlBundle\FMLessqlBundle;
 /**
  * Class FMSummernoteBundleTest.
  */
-class FMLessqlBundleTest extends \PHPUnit\Framework\TestCase
+class FMLessQLBundleTest extends \PHPUnit\Framework\TestCase
 {
     public function testBundle()
     {
